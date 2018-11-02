@@ -7,9 +7,6 @@ phases:
  pre_build:
    commands:
      - echo "pre_build step - configure CLI"
-     #- export AWS_ACCESS_KEY_ID=AKIAIPYSIHYRMAWZ6P7A
-     #- export AWS_SECRET_ACCESS_KEY=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
-     #- export AWS_DEFAULT_REGION=us-west-2
  build:
    commands:
      - aws s3 sync --delete . "s3:demostaticwebpage"
