@@ -9,7 +9,7 @@ phases:
      - echo "pre_build step - configure CLI"
  build:
    commands:
-     - aws s3 sync . "s3:demostaticwebpage" --delete
+     - aws s3 sync . "s3://demostaticwebpage" --delete
  post_build:
    commands:
      - echo "post_build step"
